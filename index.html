@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            background: radial-gradient(circle,#8754ff,#8E2DE2);; /* Purple background color */
+            color: #fff; /* White text color */
+            font-family: "Poppins", sans-serif;
+            text-align: center;
+            padding: 80px;
+        }
+
+        h1 {
+            margin-bottom: 100px;
+            font-size:60px;
+        }
+
+        button {
+            background-color: #512da8; /* Darker purple button color */
+            color: #fff; /* White text color */
+            padding: 30px 40px;
+            border: none;
+            border-radius: 5px;
+            margin: 100px auto ;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size:25px;
+        }
+
+        button:hover {
+            background-color: #673ab7; /* Lighter purple button color on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>Quiz Mania!</h1>
+    <button onclick="openProject1()">Trivia Quiz</button>
+    <button onclick="openProject2()">Movie Quiz</button>
+
+    <script>
+        function openProject1() {
+            window.location.href = './index1.html';
+        }
+
+        function openProject2() {
+            window.location.href = './index2.html';
+        }
+    </script>
+</body>
+</html>
